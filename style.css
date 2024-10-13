@@ -1,3 +1,67 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	.light-theme {
+		--clr-background: 255 255 255;
+		--clr-txt-primary: 17 24 39;
+		--clr-txt-secondary: 107 114 128;
+	}
+	.dark-theme {
+		--clr-background: 18, 18, 18;
+		--clr-txt-primary: 250 250 250;
+		--clr-txt-secondary: 220 220 220;
+	}
+	.accent-blue-theme {
+		--clr-accent-primary: 37 99 235;
+		--clr-accent-secondary: 29 78 216;
+	}
+	.dark-theme.accent-blue-theme {
+		--clr-accent-primary: 96 165 250;
+		--clr-accent-secondary: 37 99 235;
+	}
+	.accent-yellow-theme {
+		--clr-accent-primary: 234 179 8;
+		--clr-accent-secondary: 202 138 4;
+	}
+	.dark-theme.accent-yellow-theme {
+		--clr-accent-primary: 250 204 21;
+		--clr-accent-secondary: 234 179 8;
+	}
+	.accent-purple-theme {
+		--clr-accent-primary: 168 85 247;
+		--clr-accent-secondary: 147 51 234;
+	}
+	.dark-theme.accent-purple-theme {
+		--clr-accent-primary: 192 132 252;
+		--clr-accent-secondary: 168 85 247;
+	}
+}
+
+@layer components {
+	/* Global styles for common elements */
+	.post h1 {
+		@apply text-4xl font-bold text-txt-primary my-4;
+	}
+
+	.post h2 {
+		@apply text-3xl font-semibold text-txt-primary my-3;
+	}
+
+	.post h3 {
+		@apply text-2xl font-medium text-txt-primary my-2;
+	}
+
+	.post p {
+		@apply text-lg text-txt-secondary leading-relaxed my-2;
+	}
+
+	.post ul {
+		@apply list-disc pl-6 text-txt-secondary;
+	}
+
+	.post a {
+		@apply text-accent-primary underline hover:text-accent-secondary transition;
+	}
+}
