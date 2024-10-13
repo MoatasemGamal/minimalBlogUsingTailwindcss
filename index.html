@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="" dir="ltr">
 	<head>
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -10,18 +10,25 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
 	</head>
-	<body>
-		<header class="container flex items-center max-w-screen-lg gap-3 mx-auto text-gray-500 h-28">
-			<a href="/" class="block text-2xl font-bold text-gray-900 me-auto">Minimal Blog</a>
+	<body class="dark:text-white dark:bg-seal-950">
+		<header class="container flex items-center max-w-screen-lg gap-3 px-4 mx-auto text-gray-500 sm:px-6 xl:max-w-5xl xl:px-0 h-28">
+			<a href="/" class="flex items-center block gap-1 text-2xl font-semibold text-blue-600 me-auto">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+					<path d="M21.731 2.269a2.625 2.625 0 0 0-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 0 0 0-3.712ZM19.513 8.199l-3.712-3.712-8.4 8.4a5.25 5.25 0 0 0-1.32 2.214l-.8 2.685a.75.75 0 0 0 .933.933l2.685-.8a5.25 5.25 0 0 0 2.214-1.32l8.4-8.4Z" />
+					<path d="M5.25 5.25a3 3 0 0 0-3 3v10.5a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3V13.5a.75.75 0 0 0-1.5 0v5.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5V8.25a1.5 1.5 0 0 1 1.5-1.5h5.25a.75.75 0 0 0 0-1.5H5.25Z" />
+				</svg>
+				Minimal Blog
+			</a>
 			<nav class="contents">
 				<ul class="contents">
-					<li><a href="/blog" class="block font-bold transition-colors hover:text-blue-600">Blog</a></li>
-					<li><a href="/tags" class="block font-bold transition-colors hover:text-blue-600">Tags</a></li>
-					<li><a href="/about" class="block font-bold transition-colors hover:text-blue-600">About</a></li>
+					<li><a href="/blog" class="block font-semibold transition-colors hover:text-blue-600">Blog</a></li>
+					<li><a href="/tags" class="block font-semibold transition-colors hover:text-blue-600">Tags</a></li>
+					<li><a href="/about" class="block font-semibold transition-colors hover:text-blue-600">About</a></li>
 				</ul>
 			</nav>
 			<div class="search contents">
 				<button onclick="searchDialog.showModal()" class="transition-colors hover:text-blue-600">
+					<span class="sr-only">Search button</span>
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
 						<path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
 					</svg>
@@ -49,20 +56,120 @@
 						<a href="#" class="block px-3 py-2 transition-colors group hover:bg-blue-600 hover:text-gray-100">
 							<time datetime="PT2H30M" class="text-sm text-gray-400 transition-colors group-hover:text-gray-100">2h 30m</time>
 							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-						</a>	
+						</a>
 					</div>
 				</dialog>
 			</div>
 			<div class="contents">
 				<button class="transition-colors hover:text-blue-600">
+					<span class="sr-only">change website theme</span>
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-						<path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+						<path fill-rule="evenodd" d="M2.25 4.125c0-1.036.84-1.875 1.875-1.875h5.25c1.036 0 1.875.84 1.875 1.875V17.25a4.5 4.5 0 1 1-9 0V4.125Zm4.5 14.25a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z" clip-rule="evenodd" />
+						<path d="M10.719 21.75h9.156c1.036 0 1.875-.84 1.875-1.875v-5.25c0-1.036-.84-1.875-1.875-1.875h-.14l-8.742 8.743c-.09.089-.18.175-.274.257ZM12.738 17.625l6.474-6.474a1.875 1.875 0 0 0 0-2.651L15.5 4.787a1.875 1.875 0 0 0-2.651 0l-.1.099V17.25c0 .126-.003.251-.01.375Z" />
 					</svg>
 				</button>
 			</div>
 		</header>
-		<main></main>
-		<footer></footer>
+		<main class="container max-w-screen-lg px-4 mx-auto sm:px-6 xl:max-w-5xl xl:px-0">
+			<section class="pt-6 pb-9">
+				<h1 class="pb-3 text-4xl font-semibold tracking-wide text-gray-900 dark:text-white md:text-6xl md:pb-7">Latest</h1>
+				<p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</section>
+			<section class="articles">
+				<article class="py-12 border-t border-gray-200 md:flex md:gap-20">
+					<time datetime="" class="block pb-2 text-base font-semibold text-gray-500 md:w-1/3">October 12, 2024</time>
+					<div>
+						<h2><a href="#" class="block text-2xl font-semibold text-gray-900">Post Title or article</a></h2>
+						<div class="flex items-center gap-2 text-blue-600">
+							<a href="#" class="text-sm font-semibold uppercase transition-colors hover:text-blue-700">tag</a>
+							<a href="#" class="text-sm font-semibold uppercase transition-colors hover:text-blue-700">tag</a>
+							<a href="#" class="text-sm font-semibold uppercase transition-colors hover:text-blue-700">tag</a>
+						</div>
+						<p class="box-content my-6 text-gray-600 line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, quas, vitae delectus molestias rem recusandae voluptatum, doloremque blanditiis sequi incidunt voluptatibus unde. Quod nemo similique dicta esse debitis. Officia, aliquam.</p>
+						<a href="#" class="font-semibold text-blue-600 transition-colors duration-150 hover:text-blue-700 group">Read more <span class="inline-block transition-all duration-150 group-hover:translate-x-1 rtl:group-hover:-translate-x-1 rtl:rotate-180">&RightArrow;</span></a>
+					</div>
+				</article>
+				<article class="py-12 border-t border-gray-200 md:flex md:gap-20">
+					<time datetime="" class="block pb-2 text-base font-semibold text-gray-500 md:w-1/3">October 12, 2024</time>
+					<div>
+						<h2><a href="#" class="block text-2xl font-semibold text-gray-900">Post Title or article</a></h2>
+						<div class="flex items-center gap-2 text-blue-600">
+							<a href="#" class="text-sm font-semibold uppercase transition-colors hover:text-blue-700">tag</a>
+							<a href="#" class="text-sm font-semibold uppercase transition-colors hover:text-blue-700">tag</a>
+							<a href="#" class="text-sm font-semibold uppercase transition-colors hover:text-blue-700">tag</a>
+						</div>
+						<p class="box-content my-6 text-gray-600 line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, quas, vitae delectus molestias rem recusandae voluptatum, doloremque blanditiis sequi incidunt voluptatibus unde. Quod nemo similique dicta esse debitis. Officia, aliquam.</p>
+						<a href="#" class="font-semibold text-blue-600 transition-colors duration-150 hover:text-blue-700 group">Read more <span class="inline-block transition-all duration-150 group-hover:translate-x-1 rtl:group-hover:-translate-x-1 rtl:rotate-180">&RightArrow;</span></a>
+					</div>
+				</article>
+				<article class="py-12 border-t border-gray-200 md:flex md:gap-20">
+					<time datetime="" class="block pb-2 text-base font-semibold text-gray-500 md:w-1/3">October 12, 2024</time>
+					<div>
+						<h2><a href="#" class="block text-2xl font-semibold text-gray-900">Post Title or article</a></h2>
+						<div class="flex items-center gap-2 text-blue-600">
+							<a href="#" class="text-sm font-semibold uppercase transition-colors hover:text-blue-700">tag</a>
+							<a href="#" class="text-sm font-semibold uppercase transition-colors hover:text-blue-700">tag</a>
+							<a href="#" class="text-sm font-semibold uppercase transition-colors hover:text-blue-700">tag</a>
+						</div>
+						<p class="box-content my-6 text-gray-600 line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, quas, vitae delectus molestias rem recusandae voluptatum, doloremque blanditiis sequi incidunt voluptatibus unde. Quod nemo similique dicta esse debitis. Officia, aliquam.</p>
+						<a href="#" class="font-semibold text-blue-600 transition-colors duration-150 hover:text-blue-700 group">Read more <span class="inline-block transition-all duration-150 group-hover:translate-x-1 rtl:group-hover:-translate-x-1 rtl:rotate-180">&RightArrow;</span></a>
+					</div>
+				</article>
+				<article class="py-12 border-t border-gray-200 md:flex md:gap-20">
+					<time datetime="" class="block pb-2 text-base font-semibold text-gray-500 md:w-1/3">October 12, 2024</time>
+					<div>
+						<h2><a href="#" class="block text-2xl font-semibold text-gray-900">Post Title or article</a></h2>
+						<div class="flex items-center gap-2 text-blue-600">
+							<a href="#" class="text-sm font-semibold uppercase transition-colors hover:text-blue-700">tag</a>
+							<a href="#" class="text-sm font-semibold uppercase transition-colors hover:text-blue-700">tag</a>
+							<a href="#" class="text-sm font-semibold uppercase transition-colors hover:text-blue-700">tag</a>
+						</div>
+						<p class="box-content my-6 text-gray-600 line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, quas, vitae delectus molestias rem recusandae voluptatum, doloremque blanditiis sequi incidunt voluptatibus unde. Quod nemo similique dicta esse debitis. Officia, aliquam.</p>
+						<a href="#" class="font-semibold text-blue-600 transition-colors duration-150 hover:text-blue-700 group">Read more <span class="inline-block transition-all duration-150 group-hover:translate-x-1 rtl:group-hover:-translate-x-1 rtl:rotate-180">&RightArrow;</span></a>
+					</div>
+				</article>
+				<article class="py-12 border-t border-gray-200 md:flex md:gap-20">
+					<time datetime="" class="block pb-2 text-base font-semibold text-gray-500 md:w-1/3">October 12, 2024</time>
+					<div>
+						<h2><a href="#" class="block text-2xl font-semibold text-gray-900">Post Title or article</a></h2>
+						<div class="flex items-center gap-2 text-blue-600">
+							<a href="#" class="text-sm font-semibold uppercase transition-colors hover:text-blue-700">tag</a>
+							<a href="#" class="text-sm font-semibold uppercase transition-colors hover:text-blue-700">tag</a>
+							<a href="#" class="text-sm font-semibold uppercase transition-colors hover:text-blue-700">tag</a>
+						</div>
+						<p class="box-content my-6 text-gray-600 line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, quas, vitae delectus molestias rem recusandae voluptatum, doloremque blanditiis sequi incidunt voluptatibus unde. Quod nemo similique dicta esse debitis. Officia, aliquam.</p>
+						<a href="#" class="font-semibold text-blue-600 transition-colors duration-150 hover:text-blue-700 group">Read more <span class="inline-block transition-all duration-150 group-hover:translate-x-1 rtl:group-hover:-translate-x-1 rtl:rotate-180">&RightArrow;</span></a>
+					</div>
+				</article>
+			</section>
+			<a href="/blog" class="block font-semibold text-blue-600 transition-colors duration-150 w-min ms-auto whitespace-nowrap hover:text-blue-700 group">All Posts <span class="inline-block transition-all duration-150 group-hover:translate-x-1 rtl:group-hover:-translate-x-1 rtl:rotate-180">&RightArrow;</span></a>
+		</main>
+		<footer class="container flex flex-col max-w-screen-lg gap-3 py-5 mx-auto">
+			<ul class="flex items-center justify-center gap-1 text-gray-600">
+				<li>
+					<a href="#" class="block hover:text-blue-600 transition-colors duration-200 *:w-8">
+						<span class="sr-only">facebook</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.04c-5.5 0-10 4.49-10 10.02c0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89c1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02" /></svg>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="block hover:text-blue-600 transition-colors duration-200 *:w-8">
+						<span class="sr-only">linkedin</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z" /></svg>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="block hover:text-blue-600 transition-colors duration-200 *:w-8 *:h-8">
+						<span class="sr-only">twitter or x.com</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zm297.1 84L257.3 234.6L379.4 396h-95.6L209 298.1L123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5l78.2-89.5zm-37.8 251.6L153.4 142.9h-28.3l171.8 224.7h26.3z" /></svg>
+					</a>
+				</li>
+			</ul>
+			<p class="text-center">&copy; 2024 <a href="/" class="text-blue-600">Minimal Blog</a> . All rights reserved.</p>
+			<ul class="flex flex-wrap justify-center divide-x *:px-2">
+				<li><a href="/privacy" class="block transition-colors hover:text-blue-600">Privacy Policy</a></li>
+				<li><a href="/terms" class="block transition-colors hover:text-blue-600">Terms of Service</a></li>
+				<li><a href="/about" class="block transition-colors hover:text-blue-600">About</a></li>
+				<li><a href="/contact" class="block transition-colors hover:text-blue-600">Contact Us</a></li>
+			</ul>
+		</footer>
 		<script type="module" src="/main.js"></script>
 		<script>
 			searchDialog.addEventListener("click", (event) => {
